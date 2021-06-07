@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="allbgc">
+<h1 class="heading">{{ heading_title }}</h1>
+<div class="row xspspace">
+<div id="special" class="owl-theme owl-carousel">
+ {% for product in products %}
+
+  <div class="product-layout col-xs-12">
+    <div class="product-thumb transition">
+      <div class="image"><a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive center-block" /></a>
+          <!-- Webiarch Images Start -->
+              {% set t = 0 %}
+                {% for webi_image in product.webi_images %}
+                {% if t == 0 %}
+                 <a href="{{ product.href }}"><img src="{{ webi_image.popup }}" class="img-responsive second-img" alt="hover image"/></a>
+                {% set t = t + 1 %}
+                {% endif %}
+              {% endfor %}
+      <!-- Webiarch Images End -->
+        {% if product.price %}
+          {% if product.special %}
+               <h3 class="sale">sale</h3>
+          {% endif %}
+      {% endif %}
+      <button type="button" data-toggle="tooltip" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');" class="bwish">
+              <svg width="19px" height="18px"><use xlink:href="#heart" /></svg></button>
+      </div>
+      <div class="caption">
+         {% if product.rating %}
+          <div class="rating">
+            {% for i in 1..5 %}
+            {% if product.rating < i %}
+            <span class="fa fa-stack">
+              <i class="fa fa-star-o fa-stack-2x"></i>
+            </span>
+            {% else %}
+            <span class="fa fa-stack">
+              <i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i>
+            </span>
+            {% endif %}
+          {% endfor %}</div>{% else %}
+          <div class="rating">{% for i in 1..5 %}
+          <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+          {% endfor %}</div>
+        {% endif %}
+        <h4  class="protitle"><a href="{{ product.href }}">{{ product.name }}</a></h4>
+
+         {% if product.price %}
+        <div class="price">
+          {% if not product.special %}
+          {{ product.price }}
+          {% else %}
+          <span class="price-new">{{ product.special }}</span> <span class="price-old">{{ product.price }}</span>
+          {% endif %}
+         {#  {% if product.tax %}
+          <span class="price-tax">{{ text_tax }} {{ product.tax }}</span>
+          {% endif %} #}
+        </div>
+        {% endif %}
+        {# <p>{{ product.description }}</p> #}
+       
+       
+         <div class="button-group">
+            <button type="button"  onclick="cart.add('{{ product.product_id }}');" class="bcart">{{ button_cart }}</button>
+            <button type="button" data-toggle="tooltip" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');" class="bcom">
+            <svg width="20px" height="20px"><use xlink:href="#compare"/></svg></button>
+            <div data-toggle="tooltip" title="Quickview"  class="bquickv"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+</div>
+
+      <script type="text/javascript">
+    $(document).ready(function() {
+    $("#special").owlCarousel({
+    itemsCustom : [
+    [0, 1],
+    [412, 2],
+    [768, 3],
+    [992, 3],
+    [1200, 3],
+    [1390, 4]
+    ],
+      // autoPlay: 1000,
+      navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+      navigation : true,
+      pagination:false
+    });
+    });
+</script>

@@ -1,0 +1,259 @@
+@media (min-width:992px){
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: right;
+    }
+}
+@media (min-width:768px){
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+        float: right;
+    }
+}
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+    float:right;
+}
+.pull-left{
+    float:right !important;
+}
+.pull-right{
+    float:left !important;
+}
+.list-unstyled {
+    padding-right: 0;
+}
+.text-right{
+    text-align: left;
+}
+.text-left{
+    text-align: right;
+}
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"] input[type="radio"]{
+    float: left;
+    left: 0;
+    margin-left: 0;
+}
+.dropdown-menu.pull-right,.dropdown-menu-right{
+    left: 0;
+    right: auto
+}
+.dropdown-menu,#top #form-currency .currency-select, #top #form-language .language-select{
+    text-align: right;
+}
+/* .dropdown-menu{
+    right: 0;
+    left: auto;
+} */
+.checkbox-inline, .radio-inline {
+    padding-right: 20px;
+    padding-left: 0;
+}
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child > .btn-group:not(:first-child) > .btn, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/* topbar */
+
+.lookbook h1::after, .main-title2 h1::after{
+    right: 0;
+    left: auto
+}
+.haccount li a i{
+    margin-left: 8px;
+    margin-right: auto;
+}
+.wbSearch .close-nav i {
+    margin-right: 15px;
+    margin-left: auto
+}
+.product-thumb,.blog-right{
+    direction: rtl;
+}
+.cartprice{
+    right: 70px;
+    left: auto
+}
+.item-cate.f1 {
+    margin-right: 10px;
+    margin-left: auto
+}
+#search-by-category .search-container .categories-container{
+    float: right;
+}
+.categories-container .hover-cate p{
+    background-position: left 0px bottom 7px !important;
+}
+#search-by-category .search-container .categories-container .hover-cate p::after{
+    left: 20px;
+    right: auto;
+}
+.close{
+    float: left;
+}
+.webi-post-author .fa-calendar {
+    margin-left: 5px;
+    margin-right: auto
+}
+#scroll{
+    left: 20px;
+    right: auto
+}
+#cart-total{
+    left: -7px;
+    right: auto
+}
+/* category page */
+.pagination > li > a, .pagination > li > span{
+    float: right;
+}
+.select-input::after{
+    left: 10px;
+    right: auto
+}
+/* product */
+.checkbox label, .radio label{
+    padding-right: 20px;
+    padding-left: 0;
+}
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"] input[type="radio"] {
+    float: right;
+    right: 0;
+    margin-right: 0;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"]{
+    margin-right: -20px;
+    margin-left: auto;
+}
+.zoomWindow {
+    right: 637px;
+    left: auto !important;
+}
+.a2a_default_style a,.a2a_default_style .a2a_counter img, .a2a_default_style .a2a_dd, .a2a_default_style .a2a_svg{
+    float: right !important;
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{
+    left: -6px;
+    right: auto;
+    text-align: left !important;
+}
+.select-input::after{
+    left: 10px;
+    right: auto;
+}
+#accordion .panel-title i{
+    float: left;
+}
+.search-page .select-input::after {
+    left: 15px;
+    right: auto;
+}
+.pro-tab .owl-theme .owl-controls .owl-buttons .owl-prev, #special.owl-theme .owl-controls .owl-buttons .owl-prev, #blog.owl-theme .owl-controls .owl-buttons .owl-prev, #related.owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 15px;
+    right: auto;
+}
+.pro-tab .owl-carousel .owl-buttons .owl-next, #special.owl-carousel .owl-buttons .owl-next, #blog.owl-carousel .owl-buttons .owl-next, #related.owl-carousel .owl-buttons .owl-next {
+    left: 70px !important;
+    right: auto;
+}
+/* other pages */
+#menu .dropdown-menu{
+    direction: ltr;
+}
+.newsl .button-submit button{
+    margin-right: 10px;
+    margin-left: auto
+}
+.contsp{
+    margin-right: 35px;
+    margin-left: auto
+}
+.wco{
+    margin-right: 38px;
+    margin-left: auto
+}
+.wrmenu .navbar-toggle{
+    right: 15px;
+    left: auto
+}
+.list-group a,#xsfilter{
+    direction: ltr;
+}
+#xsfilter .checkbox label{
+    padding-left: 0;
+    padding-right: 0
+}
+#xsfilter .list-group-item{
+    text-align: right;
+}
+#xsfilter .list-group a{
+    direction: rtl;
+}
+.mfp-close{
+    left: 0;
+    right: auto !important
+}
+.product-tab .nav-tabs li::after{
+    right: 0;
+    left: auto
+}
+@media (min-width: 768px){
+    .fborder {
+        border-right: 1px solid #323232;
+        border-left: none;
+    }
+    .cdrop .dropdown-menu{
+        left: 0;
+        right: auto
+    }
+    .product-list .image, .product-list .caption{
+        float: right;
+    }
+    .parallex .full{
+        text-align: right;
+    }
+}
+@media (max-width: 991px){
+    #top-links, #logo {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    .sidenav{
+        right: 0;
+        left: auto;
+        text-align: right;
+    }
+    #mySidenav li a i{
+        float: left;
+    }
+}
+@media (max-width: 767px){
+    .cdrop .dropdown-menu{
+        right: 0;
+        left: auto
+    }
+    .tab-head .nav-tabs{
+        text-align: right;
+    }
+    .middle-footer .btn.toggle,.catfilter .panel-heading button{
+        left: 0;
+        right: auto
+    }
+    footer h5 .toggle.collapsed::after,footer h5 .toggle::after,.catfilter .toggle.collapsed::after,.catfilter .toggle::after{
+        float: left;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .menusp{
+        padding: 0 15px;
+    }
+}
+@media (min-width: 412px) and (max-width: 767px){
+    .pro-tab .owl-theme .owl-controls .owl-buttons .owl-prev, #special.owl-theme .owl-controls .owl-buttons .owl-prev{
+        left: 0;
+        right: auto
+    }
+    .pro-tab .owl-carousel .owl-buttons .owl-next, #special.owl-carousel .owl-buttons .owl-next{
+        left: 50px !important;
+        right: auto;
+    }
+}
